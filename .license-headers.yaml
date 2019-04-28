@@ -1,7 +1,11 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at https://mozilla.org/MPL/2.0/.
+
 
 
 paths:
-    - src
+    - .
 
 files:
     js:
@@ -19,9 +23,17 @@ files:
             <!-- This Source Code Form is subject to the terms of the Mozilla Public
                  License, v. 2.0. If a copy of the MPL was not distributed with this
                  file, You can obtain one at https://mozilla.org/MPL/2.0/. -->
-    py_yaml:
+    py:
         extensions:
             - .py
+        skip_shebang: true
+        template: |
+            # This Source Code Form is subject to the terms of the Mozilla Public
+            # License, v. 2.0. If a copy of the MPL was not distributed with this
+            # file, You can obtain one at https://mozilla.org/MPL/2.0/.
+
+    yaml:
+        extensions:
             - .yaml
         template: |
             # This Source Code Form is subject to the terms of the Mozilla Public
